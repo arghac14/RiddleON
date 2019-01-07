@@ -1,0 +1,90 @@
+<!Doctype html>
+<html>
+<head>
+	<title>RiddleOn!</title>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="questions.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<center>
+<div id="fpage">
+		<div id="logo"><h1 id="title">Riddle<b id="O">ON</b></h1><h1 id="ex">!</h1>
+		</div>
+	<div id="welcome">
+		<br><h2 id="welcomeMessage">&nbsp&nbspWelcome to the Game!</h2>
+		<div id="playerName" >
+		<label for="fullname"><b id="pname">Player's Name:</b></label><input type="text" id="fullname" placeholder="Enter Your beautiful name here ;)" required size="30px"/><br>
+		</div>
+		<audio id="myAudio">
+  		<source src="horse.mp3" type="audio/ogg">
+		</audio>
+			<br><button id="accept" onclick="playerName()"><b id="next">NEXT</b></button>
+			<br><br><br><br>
+			
+	</div>
+</div>
+
+	</center>
+	<div id="troll" style="display:none">
+		<p id="troll1">Hi </p>
+		<p id="troll2">Up for this challenge? <br>Rule is simple:One incorrect answer and you're OUT!</p>
+		<p id="troll3">There is a big 'SURPRISE' for you,if you answer all the questions correctly....but wait I don't think you can do that with that little brain. LOL!</p><br>
+		<p id="troll4"><center> What? wanna prove me wrong?</center></p>
+		<button id="hellyeah" onclick="startGame()" ><b id="hell">Hell Yeah!!</b></button>
+	</div>
+	
+	<div id="quizpage" style="display:none">
+		<audio id="myAudio1">
+  		<source src="audio/ml.mp3" type="audio/ogg">
+		</audio>
+		<audio id="myAudio2">
+  		<source src="audio/tada.mp3" type="audio/ogg">
+		</audio>
+		<audio id="myAudio3">
+  		<source src="audio/ca.mp3" type="audio/ogg">
+		</audio>
+		<audio id="myAudio4">
+  		<source src="audio/bz.mp3" type="audio/ogg">
+		</audio>
+	<center><div id="head"><br><br>Answer the question-</div></center>
+
+	<div id="questionplate">
+		<div id="head"></div>
+		<div id="question"></div>
+		<label id="options"><input type="radio" name="options" value="1"><span id="op1"></span></label>
+		<label id="options"><input type="radio" name="options" value="2"><span id="op2"></span></label>
+		<label id="options"><input type="radio" name="options" value="3"><span id="op3"></span></label>
+		<label id="options"><input type="radio" name="options" value="4"><span id="op4"></span></label>
+		<button id="nextButton" onclick="loadNextQuestion()">Submit</button>
+	</div>
+	</div>
+	<div id="2" style="display: none">
+		<center>
+	
+		<h1 id="youlost">YOU LOST (as expected)</h1>
+		<img id="img" src="images/troll.jpg" height="240px" width="280px"></img>
+		<div id="lose">
+		<p id="losetroll">Hahahahaha! told you...<br></p>
+		<p id="tryagain">Now don't cry,press the button to try again. Remember there is a BIG SURPRISE in the end!</p>
+		</div>
+		<a href="index.html"><button id="restart" onclick="restartGame()" ><b id="restartText">Restart</b></button></a><br><br>
+			<div id="credit">
+
+		<marquee><center> Made by <b><i>Arghadip Chakraborty</i></b> <a href="pages/profilepage/profileargha.html" style="color: #EAF0F1" > Click here to visit profile<img id ="a" src="images/author.jpg" height="45px" width="45px" style="border-radius: 50%"></a></center> </marquee>
+			</div>
+	</center>
+	</div>
+	<center>
+	<div id="3" style="display:none">
+		<h1 id="youwin">YOU WIN!</h1>
+		<img id="img1" src="images/surprise.jpg" height="1440px" width="1280px"></img>
+		<div id="win">
+		<p id="wintroll">Here's your big 'SURPRISE'....see how big it is! ;)<br>
+		</p>
+	</div>
+	</center>
+</div>
+</body>
+</html>
