@@ -14,8 +14,8 @@ var questions =
           question: "[2]. How many holes in POLO?",
           option1:"A.4",
           option2:"B.I don't Know",
-          option3:"C.2",
-          option4:"D.May be 6?",
+          option3:"C.3",
+          option4:"D.May be 2?",
           answer: 3
         },
         {
