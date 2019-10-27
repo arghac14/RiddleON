@@ -1,42 +1,52 @@
 body {
-	 background: radial-gradient(#353c44, #222931);
-	}
-#title{
-	color: rgba(240, 255, 0, 1);
-	font-size: 90px;
-	transform: scale(1.3,2);
+   background: radial-gradient(#353c44, #222931);
+  }
 
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
+
+.heading {
+  font-size: 40px;
+}
+
+#title {
+  color: rgba(240, 255, 0, 1);
+}
+
+
 #ex {
-	color: rgba(240, 255, 0, 1);
-	font-size: 90px;
-	position: absolute;
-	left:70%;
-	top:.2%;
-	transform: scale(1.3,2);
-
+  color: rgba(240, 255, 0, 1);
+  position: absolute;
+  left:70%;
+  top:.2%;
 }
-#O {
-	color: rgba(249, 105, 14, 1);
-	font-size: 90px;
-	animation-name: oa; 
-	animation-duration: 2s;
-    animation-delay: 2s;
-    animation-iteration-count: 1;
 
+#O {
+  color: rgba(249, 105, 14, 1);
+  animation-name: oa; 
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
 }
 
 #title,#O{
-			text-shadow:3.6px 3.6px rgba(103, 65, 114, 1);
+      text-shadow:3.6px 3.6px rgba(103, 65, 114, 1);
 }
 @keyframes oa{
-	100% {color: rgba(240, 255, 0, 1);}
+  100% {color: rgba(240, 255, 0, 1);}
 }
 
 #welcome{
-	color:rgba(240, 255, 0, 1);
-	font-size: 22px;
-	font-family: Comic Sans MS, Comic Sans, cursive;
+  color:rgba(240, 255, 0, 1);
+  font-size: 22px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  width: 100%;
 
 }
 #accept {
@@ -60,33 +70,33 @@ body {
   transform: translateY(4px);
 }
 #next{
-	font-family: Comic Sans MS, Comic Sans, cursive;
+  font-family: Comic Sans MS, Comic Sans, cursive;
 }
 #fullname{
-	border-color: rgba(240, 255, 0, 1);
-	
-	font-size: 22px;
-	font-family: Comic Sans MS, Comic Sans, cursive;
+  border-color: rgba(240, 255, 0, 1);
+  max-width: 90%;
+  font-size: 22px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
 
 }
 #troll{
-	padding: 10px;
-	color:rgba(240, 255, 0, 1);
-	font-size: 22px;
-	font-family: Comic Sans MS, Comic Sans, cursive;	
+  padding: 10px;
+  color:rgba(240, 255, 0, 1);
+  font-size: 22px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  text-align: left; 
 }
 #troll1, #head{
-	
-	color:rgba(240, 255, 0, 1);
-	font-size: 25px;
-	font-family: Comic Sans MS, Comic Sans, cursive;	
-}	
+  
+  color:rgba(240, 255, 0, 1);
+  font-size: 25px;
+  font-family: Comic Sans MS, Comic Sans, cursive;  
+} 
 
 
 #hellyeah {
-	position: relative;
-	left:70%;
-	top:85%;
+  position: relative;
+  display: block;
   padding: 15px 25px;
   font-size: 24px;
   text-align: center;
@@ -107,54 +117,51 @@ body {
   transform: translateY(4px);
 }
 #hell{
-	font-family: Comic Sans MS, Comic Sans, cursive;
+  font-family: Comic Sans MS, Comic Sans, cursive;
 }
 #questionplate{
-	height:240px;
-	width:680px;
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform: translateX(-50%) translateY(-50%);
-	background:rgba(52, 73, 94, 1);
-	padding: 20px;
-	border: 1px solid rgba(25, 181, 254, 1);
-	box-shadow: 0 0 8px 3px #fff;
-	border-radius: 15px;
-	animation-name: glow;
-	animation-delay: .1s;
-	animation-duration: 1s;
-	animation-iteration-count: infinite;
+  background:rgba(52, 73, 94, 1);
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid rgba(25, 181, 254, 1);
+  box-shadow: 0 0 8px 3px #fff;
+  border-radius: 15px;
+  animation-name: glow;
+  animation-delay: .1s;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 #question{
-	padding: 18px;
-	color:rgba(240, 255, 0, 1);
-	font-size: 20px;
-	font-family: Comic Sans MS, Comic Sans, cursive;
-	margin: 8px 0 8px 0;
-	border-radius: 20px;
+  padding: 18px;
+  color:rgba(240, 255, 0, 1);
+  font-size: 20px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  margin: 8px 0 8px 0;
+  border-radius: 20px;
 }
 #options{
-	width: 300px;
-	display: inline-block;
-	padding: 10px 0 10px 15px;
-	vertical-align: middle;
-	background: rgba(44, 62, 80, 1);
-	margin: 10px  0 10px 10px;
-	color: #fff;
-	border-radius: 20px;
-	color:rgba(240, 255, 0, 1);
-	font-size: 25px;
-	font-family: Comic Sans MS, Comic Sans, cursive;
+  width: 100%;
+  max-width: 300px;
+  display: inline-block;
+  padding: 10px 0 10px 15px;
+  box-sizing: border-box;
+  background: rgba(44, 62, 80, 1);
+  margin: 10px 0;
+  color: #fff;
+  border-radius: 20px;
+  color:rgba(240, 255, 0, 1);
+  font-size: 25px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  text-align: left;
 }
 #options:hover{
-	background:rgba(1, 50, 67, 1);
-	box-shadow: 0 0 8px 3px #fff;
-	color: rgba(107, 185, 240, 1);
-	animation-name: glow;
-	animation-delay: .1s;
-	animation-duration: 1s;
-	animation-iteration-count: infinite;
+  background:rgba(1, 50, 67, 1);
+  box-shadow: 0 0 8px 3px #fff;
+  color: rgba(107, 185, 240, 1);
+  animation-name: glow;
+  animation-delay: .1s;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 input:checked {
   height: 30px;
@@ -163,17 +170,17 @@ input:checked {
   background: rgba(240, 255, 0, 1);
   }
  #nextButton{
-	position: relative;
-	left:90%;
-	top:100%;
-	height: 30px;
-	width: 90px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  height: 30px;
+  width: 90px;
   
   font-size: 17px;
   
   color:rgba(36, 37, 42, 1);
-	
-	font-family: Comic Sans MS, Comic Sans, cursive;
+  
+  font-family: Comic Sans MS, Comic Sans, cursive;
   outline: none;
   background-color:rgba(241, 90, 34, 0.8);
   border: none;
@@ -189,20 +196,17 @@ input:checked {
   transform:translateY(4px);
 }
 @keyframes glow{
-	 0%{box-shadow: 0px 0px 20px 7px #87CEFA;}
-	50%{box-shadow:0px 0px 30px 12px #87CEFA;}
-	100%{box-shadow: 0px 0px 20px 7px #87CEFA;}
+   0%{box-shadow: 0px 0px 20px 7px #87CEFA;}
+  50%{box-shadow:0px 0px 30px 12px #87CEFA;}
+  100%{box-shadow: 0px 0px 20px 7px #87CEFA;}
 }
 #youlost{
-	color: rgba(240, 255, 0, 1);
-	font-size: 60px;
-	transform: scale(1.3,2);
-
+  color: rgba(240, 255, 0, 1);
 }
 #lose{
-	color:rgba(240, 255, 0, 1);
-	font-size: 22px;
-	font-family: Comic Sans MS, Comic Sans, cursive;
+  color:rgba(240, 255, 0, 1);
+  font-size: 22px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
 }
 #restart {
   padding: 15px 25px;
@@ -225,21 +229,64 @@ input:checked {
   transform: translateY(4px);
 }
 #youwin{
-	color: rgba(240, 255, 0, 1);
-	font-size: 60px;
-	transform: scale(1.3,2);
+  color: rgba(240, 255, 0, 1);
+  font-size: 60px;
+  transform: scale(1.3,2);
 
 }
 #win{
-	color:rgba(240, 255, 0, 1);
-	font-size: 20px;
-	font-family: Comic Sans MS, Comic Sans, cursive;
+  color:rgba(240, 255, 0, 1);
+  font-size: 20px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
 }
 #credit{
-	color:#EAF0F1;
-	font-size: 15px;
-	height: 50px;
-	font-family: Comic Sans MS, Comic Sans, cursive;
-	background:#2C3335;
+  color:#EAF0F1;
+  font-size: 15px;
+  height: 50px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  background:#2C3335;
+  text-align: center;
+}
+
+#img1 {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 768px) {
+
+  .heading {
+    font-size: 90px;
+    transform: scale(1.3,2);
+  }
+
+  #hellyeah {
+    margin-left: auto;
+  }
+
+  #troll4 {
+    text-align: center;
+  }
+
+  #questionplate{
+    height:280px;
+    width:680px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0;
+  }
+
+  #nextButton {
+    margin: ;
+  }
+
+  #youlost{
+    font-size: 60px;
+    transform: scale(1.3,2);
+  }
 
 }
+

@@ -2,18 +2,17 @@
 <html>
 <head>
 	<title>RiddleOn!</title>
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="questions.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-	<center>
-<div id="fpage">
-		<div id="logo"><h1 id="title">Riddle<b id="O">ON</b></h1><h1 id="ex"></h1>
+<div id="fpage" class="wrapper">
+		<div id="logo"><h1 id="title" class="heading">Riddle<b id="O" class="heading">ON</b></h1><h1 id="ex" class="heading"></h1>
 		</div>
 	<div id="welcome">
-		<br><h2 id="welcomeMessage">&nbsp&nbspWelcome to the Game!</h2>
+		<br><h2 id="welcomeMessage">Welcome to the Game!</h2>
 		<div id="playerName" >
 		<label for="fullname"><b id="pname">Player's Name:</b></label><input type="text" id="fullname" placeholder="Enter Your beautiful name here ;)" required size="30px"/><br>
 		</div>
@@ -26,16 +25,15 @@
 	</div>
 </div>
 
-	</center>
-	<div id="troll" style="display:none">
+	<div id="troll" class="wrapper" style="display:none">
 		<p id="troll1">Hi </p>
 		<p id="troll2">Up for this challenge? <br>Rule is simple:One incorrect answer and you're OUT!</p>
 		<p id="troll3">There is a big 'SURPRISE' for you,if you answer all the questions correctly....but wait I don't think you can do that with that little brain. LOL!</p><br>
-		<p id="troll4"><center> What? wanna prove me wrong?</center></p>
+		<p id="troll4">What? wanna prove me wrong?</p>
 		<button id="hellyeah" onclick="startGame()" ><b id="hell">Hell Yeah!!</b></button>
 	</div>
 	
-	<div id="quizpage" style="display:none">
+	<div id="quizpage" class="wrapper" style="display:none">
 		<audio id="myAudio1">
   		<source src="audio/ml.mp3" type="audio/ogg">
 		</audio>
@@ -48,7 +46,7 @@
 		<audio id="myAudio4">
   		<source src="audio/bz.mp3" type="audio/ogg">
 		</audio>
-	<center><div id="head"><br><br>Answer the question-</div></center>
+	<div id="head"><br><br>Answer the question-</div>
 
 	<div id="questionplate">
 		<div id="head"></div>
@@ -60,31 +58,25 @@
 		<button id="nextButton" onclick="loadNextQuestion()">Submit</button>
 	</div>
 	</div>
-	<div id="2" style="display: none">
-		<center>
+	<div id="2" style="display: none" class="wrapper">
 	
-		<h1 id="youlost">YOU LOST (as expected)</h1>
+		<h1 id="youlost" class="heading">YOU LOST (as expected)</h1>
 		<img id="img" src="images/troll.jpg" height="240px" width="280px"></img>
 		<div id="lose">
 		<p id="losetroll">Hahahahaha! told you...<br></p>
 		<p id="tryagain">Now don't cry,press the button to try again. Remember there is a BIG SURPRISE in the end!</p>
 		</div>
 		<a href="index.html"><button id="restart" onclick="restartGame()" ><b id="restartText">Restart</b></button></a><br><br>
-			<div id="credit">
-
-		<marquee><center><b><i>Arghadip Chakraborty</i></b> <a href="https://arghac14.github.io" style="color: #EAF0F1" > Click here to visit profile<img id ="a" src="images/author.jpg" height="45px" width="45px" style="border-radius: 50%"></a></center> </marquee>
+			<div id="credit"><b><i>Arghadip Chakraborty</i></b> <a href="https://arghac14.github.io" style="color: #EAF0F1" > Click here to visit profile<img id ="a" src="images/author.jpg" height="45px" width="45px" style="border-radius: 50%"></a>
 			</div>
-	</center>
 	</div>
-	<center>
-	<div id="3" style="display:none">
+	<div id="3" style="display:none" class="wrapper">
 		<h1 id="youwin">YOU WIN!</h1>
 		<img id="img1" src="images/surprise.jpg" height="1440px" width="1280px"></img>
 		<div id="win">
 		<p id="wintroll">Here's your big 'SURPRISE'....see how big it is! ;)<br>
 		</p>
 	</div>
-	</center>
 </div>
 </body>
 </html>
