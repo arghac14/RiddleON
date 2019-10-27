@@ -202,9 +202,6 @@ input:checked {
 }
 #youlost{
 	color: rgba(240, 255, 0, 1);
-	font-size: 60px;
-	transform: scale(1.3,2);
-
 }
 #lose{
 	color:rgba(240, 255, 0, 1);
@@ -248,7 +245,12 @@ input:checked {
 	height: 50px;
 	font-family: Comic Sans MS, Comic Sans, cursive;
 	background:#2C3335;
+  text-align: center;
+}
 
+#img1 {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Desktop Styles */
@@ -278,8 +280,13 @@ input:checked {
   }
 
   #nextButton {
-    margin: 20px 0 0 auto;
+    margin: ;
   }
-  
+
+  #youlost{
+    font-size: 60px;
+    transform: scale(1.3,2);
+  }
+
 }
 
