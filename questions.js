@@ -82,5 +82,20 @@ var questions =
           option4:"D. NO! I want the big 'SURPRISE'!",
           answer: 4
         },
-        
+        {
+          question: "[11]. What is Windrangers real name? [Dota 2]",
+          option1: "A. Spongebob Squarepants",
+          option2: "B. Synthesia",
+          option3: "C. Traxex",
+          option4: "D. Lyralei",
+          answer: 4
+        },
+        {
+          question: "[12]. Which hero is also known as the butcher? [Dota 2]",
+          option1: "A. Sven",
+          option2: "B. Pudge",
+          option3: "C. Legion Commander",
+          option4: "D. Axe",
+          answer: B
+        },
       ];
