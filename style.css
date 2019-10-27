@@ -7,7 +7,6 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
 }
@@ -121,13 +120,8 @@ body {
 	font-family: Comic Sans MS, Comic Sans, cursive;
 }
 #questionplate{
-	height:240px;
-	width:680px;
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform: translateX(-50%) translateY(-50%);
 	background:rgba(52, 73, 94, 1);
+  margin: 20px;
 	padding: 20px;
 	border: 1px solid rgba(25, 181, 254, 1);
 	box-shadow: 0 0 8px 3px #fff;
@@ -146,17 +140,19 @@ body {
 	border-radius: 20px;
 }
 #options{
-	width: 300px;
+  width: 100%;
+	max-width: 300px;
 	display: inline-block;
 	padding: 10px 0 10px 15px;
-	vertical-align: middle;
+  box-sizing: border-box;
 	background: rgba(44, 62, 80, 1);
-	margin: 10px  0 10px 10px;
+	margin: 10px 0;
 	color: #fff;
 	border-radius: 20px;
 	color:rgba(240, 255, 0, 1);
 	font-size: 25px;
 	font-family: Comic Sans MS, Comic Sans, cursive;
+  text-align: left;
 }
 #options:hover{
 	background:rgba(1, 50, 67, 1);
@@ -175,8 +171,8 @@ input:checked {
   }
  #nextButton{
 	position: relative;
-	left:90%;
-	top:100%;
+	display: block;
+  margin-left: auto;
 	height: 30px;
 	width: 90px;
   
@@ -269,6 +265,20 @@ input:checked {
 
   #troll4 {
     text-align: center;
+  }
+
+  #questionplate{
+    height:280px;
+    width:680px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0;
+  }
+
+  #nextButton {
+    margin: 20px 0 0 auto;
   }
   
 }
