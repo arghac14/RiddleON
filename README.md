@@ -1,7 +1,7 @@
 # RiddleON
 A troll game filled with funny riddles!
 
-PS: Don't kill me after playing! XD
+PS: I built this after learning vanilla js for the first time in my freshman year. A Nooob project but a special one! XD
 ### Demo:[Live link](https://arghac14.github.io/RiddleON)
 
 ### Screenshots: 
